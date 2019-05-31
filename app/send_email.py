@@ -22,7 +22,7 @@ sg = sendgrid.SendGridAPIClient(apikey=SENDGRID_API_KEY)
 from_email = Email(MY_EMAIL_ADDRESS)
 to_email = Email(MY_EMAIL_ADDRESS)
 subject = "Example Notification"
-message_text = "Hello, \n\nThis is a message from your personal notification service.\n\nCustomize this example notification content to make it useful for you! Maybe weather info? Maybe stock prices? Let your creativity guide you!"
+message_text = "Hello, \n\nThis is a test.\n\nI am checking if this will work! It's raining today"
 content = Content("text/plain", message_text)
 mail = Mail(from_email, subject, to_email, content)
 
